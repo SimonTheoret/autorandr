@@ -927,7 +927,7 @@ def apply_configuration(new_configuration, current_configuration, dry_run=False)
 
     fb_dimensions = get_fb_dimensions(new_configuration)
     try:
-        fb_args = ["--fb", "%dx%d" % fb_dimensions]
+        fb_args = []
     except:
         # Failed to obtain frame-buffer size. Doesn't matter, xrandr will choose for the user.
         fb_args = []
